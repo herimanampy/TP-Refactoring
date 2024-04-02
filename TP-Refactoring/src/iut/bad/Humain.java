@@ -23,7 +23,17 @@ public class Humain {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public void details() {
-		System.out.println ("Nom : " + nom + "\nPrenom : " + prenom + "\nAge : " + age);
+	@Override
+	public String toString() {
+		return "Humain [nom=" + nom + ", prenom=" + prenom + ", age=" + age + ", getNom()=" + getNom()
+				+ ", getPrenom()=" + getPrenom() + ", getAge()=" + getAge() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
+	public void seTAge(String Age) {
+		this.age = age;
+	}
+public void details() {
+	System.out.println ("Nom : " + nom + "\nPrenom : " + prenom + "\nAge : " + age);
+    }
 }
+	
