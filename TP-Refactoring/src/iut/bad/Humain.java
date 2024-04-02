@@ -35,11 +35,6 @@ public class Humain {
    public void details() {
 	  System.out.println ("Nom : " + nom + "\nPrenom : " + prenom + "\nAge : " + age);
     }
-   static void manger() {
-	  System.out.println("manger");
-   }
-   static void boire() {
-	 System.out.println("boire");
-   }
+  
 }
 	
