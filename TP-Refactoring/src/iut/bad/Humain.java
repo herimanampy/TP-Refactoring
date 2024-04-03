@@ -8,6 +8,14 @@ public class Humain {
 	public String getNom() {
 		return nom;
 	}
+	
+	public Humain(String nom, String prenom, int age) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+	}
+
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
@@ -29,14 +37,14 @@ public class Humain {
 				+ ", getPrenom()=" + getPrenom() + ", getAge()=" + getAge() + ", getClass()=" + getClass()
 				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
-	public void seTAge(String Age) {
+	public void seTAge(int age) {
 		this.age = age;
 	}
    public void details() {
 	  System.out.println ("Nom : " + nom + "\nPrenom : " + prenom + "\nAge : " + age);
     }
    public void ami(Humain h, int durée) {
-      System.out.println(this.nom + " " + this.prenom + " est ami avec " + h.nom + "de durée :" + durée);
+      System.out.println(this.nom + " " + this.prenom + " est ami avec " + h.nom + " durée :" + durée);
  }
 }
 	
